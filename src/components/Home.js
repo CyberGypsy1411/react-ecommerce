@@ -20,7 +20,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h2>🛍 Product</h2>
+      <h2>🛍 Products</h2>
       {products.map(p => (
         <div key={p.id} className="product-card">
           <h3>{p.name}</h3>

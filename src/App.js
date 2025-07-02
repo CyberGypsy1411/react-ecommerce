@@ -1,23 +1,17 @@
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import ProductDetail from './components/ProductDetail';
-import Cart from './components/Cart';
-import Login from './components/Login';
-import Register from './components/Register';
-import Checkout from './components/Checkout';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/LoginPage";
+import Register from "./components/SignupPage";
+import Home from "./components/Home"; // your existing home
+import EmailVerified from "./components/EmailVerified";
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/email-verified" element={<EmailVerified />} />
         <Route path="/" element={<Home />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/signup" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </Router>
   );
