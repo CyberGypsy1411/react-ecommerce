@@ -7,12 +7,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDngC4CBV8SJg-sq1_gM3-3VaBmM_6Xb0o",
-  authDomain: "react-ecommerce-66f17.firebaseapp.com",
-  projectId: "react-ecommerce-66f17",
-  storageBucket: "react-ecommerce-66f17.firebasestorage.app",
-  messagingSenderId: "668706143067",
-  appId: "1:668706143067:web:be91bc1e4cc4019899387e"
+  apiKey: "AIzaSyBOHp67t3z6Xjze5FMcRCI_qg-6jgN0Cpo",
+  authDomain: "astha-collection.firebaseapp.com",
+  projectId: "astha-collection",
+  storageBucket: "astha-collection.firebasestorage.app",
+  messagingSenderId: "137621070884",
+  appId: "1:137621070884:web:25d52acd849901b4fce4b1"
 };
 
 // Initialize Firebase
