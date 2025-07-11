@@ -1,0 +1,26 @@
+.forgive-button-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.forgive-button {
+  background-color: #ff7f7f;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.forgive-button:hover {
+  background-color: #e85c5c;
+  transform: scale(1.05);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #2e8b57;
+}

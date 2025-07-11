@@ -1,19 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./components/LoginPage";
-import Register from "./components/SignupPage";
-import Home from "./components/Home"; // your existing home
-import EmailVerified from "./components/EmailVerified";
+import React from 'react';
+import Envelope from './components/Envelope';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/email-verified" element={<EmailVerified />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
+    <div className="app">
+      <h1>A Page from My Heart 💌</h1>
+      <Envelope />
+    </div>
   );
 }
 

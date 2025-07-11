@@ -1,0 +1,26 @@
+.letter {
+  max-width: 600px;
+  background-color: #fff8f0;
+  padding: 2rem;
+  margin-top: 1rem;
+  border: 2px dashed #d89fa6;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  line-height: 1.8;
+  position: relative;
+}
+
+.letter::before {
+  content: "💌";
+  font-size: 2rem;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
+.letter p {
+  margin: 1rem 0;
+}
