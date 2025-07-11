@@ -1,20 +1,54 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./components/LoginPage";
-import Register from "./components/SignupPage";
-import Home from "./components/Home"; // your existing home
-import EmailVerified from "./components/EmailVerified";
+import React, { useRef, useState } from 'react';
+import Letter from './components/Letter';
+import PhotoReel from './components/PhotoReel';
+import ForgiveButton from './components/ForgiveButton';
+import './App.css';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/email-verified" element={<EmailVerified />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
-  );
+  const audioRef = useRef(null);
+  const [started, setStarted] = useState(false);
+
+  // useEffect(() => {
+  //   if (audioRef.current) {
+  //     audioRef.current.play().catch((err) => {
+  //       console.log("Autoplay blocked:", err);
+  //     });
+  //   }
+  // }, []);
+
+ const handleStart = () => {
+  setStarted(true);
+  if (audioRef.current) {
+    audioRef.current.currentTime = 25; // Start from 23 seconds
+    audioRef.current.play();
+  }
+};
+
+ return (
+  <div className="app barbie-theme">
+    {/* Audio tag */}
+    <audio ref={audioRef} loop>
+      <source src="/song.mp3" type="audio/mpeg" />
+    </audio>
+
+    {!started ? (
+      <div className="start-screen">
+        <h2>Moti Thara liye ek letter hai…</h2>
+        <button className="start-button" onClick={handleStart}>
+          💖 Tap to Begin
+        </button>
+      </div>
+    ) : (
+      <>
+        <h1>🌸 Sirf or sirf Khusboo ka liye 💖</h1>
+        <Letter />
+        {/* <PhotoReel /> */}
+        <ForgiveButton />
+      </>
+    )}
+  </div>
+);
+
 }
 
 export default App;
