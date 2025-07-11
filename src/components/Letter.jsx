@@ -4,7 +4,7 @@ import './Letter.css';
 function Letter() {
   return (
     <div className="letter">
-      <p>Dear Astha,</p>
+      <p>Dear Billo(Astha),</p>
 
       <p>
         I know… I messed up. Again. 🙈  
