@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+
 .app {
-  text-align: center;
-  font-family: 'Segoe UI', cursive;
-  background: url('https://www.transparenttextures.com/patterns/old-wall.png');
-  padding: 3rem;
+  font-family: 'Quicksand', sans-serif;
   min-height: 100vh;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: url('/doodle-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #c2185b;
+}
+
+.barbie-theme h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #ff1493;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px #fff;
 }

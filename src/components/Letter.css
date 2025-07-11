@@ -1,26 +1,26 @@
 .letter {
   max-width: 600px;
-  background-color: #fff8f0;
+  margin: 0 auto;
+  background: #fff0f5;
+  border: 2px dashed #ff69b4;
   padding: 2rem;
-  margin-top: 1rem;
-  border: 2px dashed #d89fa6;
   border-radius: 20px;
-  text-align: left;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
   font-size: 1.2rem;
-  font-family: 'Georgia', serif;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Poppins ', cursive;
   line-height: 1.8;
-  position: relative;
 }
 
-.letter::before {
-  content: "💌";
-  font-size: 2rem;
-  position: absolute;
-  top: -15px;
-  left: -15px;
+.barbie-dance {
+  margin-top: 1.5rem;
+  width: 180px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  animation: pop 1s ease;
 }
 
-.letter p {
-  margin: 1rem 0;
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
