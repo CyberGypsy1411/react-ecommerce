@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app barbie-theme">
+    <div className="app barbie-theme" >
       <h1>🌸 My Sorry Note 💖</h1>
 
       {/* Background Music */}

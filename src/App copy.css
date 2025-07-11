@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
 
 .app {
-  font-family: 'Quicksand', cursive;
-  background: linear-gradient(135deg, #ffb6f2, #ffe1f9);
+  font-family: 'Quicksand', sans-serif;
   min-height: 100vh;
   text-align: center;
   padding: 2rem 1rem;
+  background: url('/doodle-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #c2185b;
 }
 
