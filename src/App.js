@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import Letter from './components/Letter';
-import PhotoReel from './components/PhotoReel';
 import ForgiveButton from './components/ForgiveButton';
 import './App.css';
 
